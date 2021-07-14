@@ -353,16 +353,116 @@ Python distinguishes between two fundamental kinds of loops: \textbf{while} loop
 \end{frameact}
 
 \begin{frame}[fragile]{Programs}
+  \only<1>{%
   You have been writing programs all through this book. Every chunk of executable code that can be saved and run on demand is a computer program. Now that you have a lot of tools under our belt, you can combine them to write some pretty interesting programs. You know how to generate input from a user, we know how to convert the input into desired types, and you know how to use conditionals and loops to iterate through cases and print various results depending upon the outcome.
+  }
 
-  \begin{exercise}{Calculating Perfect Squares}
+  \begin{onlyenv}<2>
+      \begin{exercise}{Calculating Perfect Squares}
     \begin{enumerate} \justifying
     \item Prompt the user to enter a number to see if it's a perfect square
     \item Set a variable as equal to \texttt{input( )}. In this case let's enter 64
     \item Ensure the user input is a positive integer
     \item Choose an iterator variable
     \item Initialize a Boolean to check for a perfect square
+    \item Initialize a \textbf{while} loop from -1 to the square root of the number
+    \item Increment \textbf{i} by 1
+    \item Check the square root of the \textbf{number}
+    \item Indicate that we have a perfect \textbf{square}
+    \item \textbf{break} out of the loop
+    \item If the number is \textbf{square}, \textbf{print} out the result
+    \item If the number is not a square, print out this result      
     \end{enumerate}
   \end{exercise}
+\end{onlyenv}
+
+  \begin{onlyenv}<3>
+      \begin{exercise}{Real Estate Offer}
+    \begin{enumerate} \justifying
+    \item Begin by stating a market price
+    \item Prompt the user to make an offer on the house
+    \item  Set offer as equal to \texttt{input()}
+    \item Prompt the user to enter their best offer for the house
+    \item Set best as equal to \texttt{input()}.
+    \item Prompt the user to choose increments.
+    \item Set increment as equal to \texttt{input()}
+    \item Set \textbf{offer_accepted} as equal to \textbf{False}
+    \item Initialize the \textbf{while} loop from \textbf{offer} to \textbf{best}
+    \item If the \textbf{offer} is greater than \textbf{650000}, they get the house
+    \item If the offer does not exceed 650000, they don't get the house
+    \item Add increment to offer
+    \end{enumerate}
+  \end{exercise}
+  \end{onlyenv}
+\end{frame}
+
+\begin{frame}[fragile]{The \texttt{for} Loop}
+\only<1>{  The for loops are similar to while loops, but they have additional advantages, such as being able to iterate over strings and other objects.}
+
+  \begin{onlyenv}<1>
+    \begin{exercise}{Using for Loops}
+    \begin{enumerate} \justifying
+    \item Print out the characters of 'Portland'
+    \end{enumerate}
+  \end{exercise}
+  \end{onlyenv}
+
+  \begin{onlyenv}<2>
+    \begin{code}{}
+    \begin{lstlisting}
+      for i in range(1,10):
+          print(i)
+    \end{lstlisting}
+  \end{code}
+  
+  \begin{code}{}
+    \begin{lstlisting}
+      for i in range(10):
+          print(i)
+    \end{lstlisting}
+  \end{code}
+
+    \begin{code}{}
+    \begin{lstlisting}
+      for i in range(1, 11, 2):
+          print(i)
+    \end{lstlisting}
+  \end{code}
+
+    \begin{code}{}
+    \begin{lstlisting}
+      for i in range(3, 0, -1):
+          print(i)
+    \end{lstlisting}
+  \end{code}
+\end{onlyenv}
+
+\begin{onlyenv}<3>
+    \begin{code}{}
+    \begin{lstlisting}
+      name = 'Corey'
+      for i in range(3):
+          for i in name:
+              print(i)
+    \end{lstlisting}
+  \end{code}
+\end{onlyenv}
+\end{frame}
+
+\begin{frame}[fragile]{The \texttt{continue} Keyword}
+  \begin{code}{}
+    \begin{lstlisting}
+      for num in range(10,100):
+          if num % 2 == 0:
+              continue
+          if num % 3 == 0:
+              continue
+          if num % 5 == 0:
+              continue
+          if num % 7 == 0:
+              continue
+          print(num)
+    \end{lstlisting}
+  \end{code}
 \end{frame}
 \end{document}
