@@ -1,0 +1,45 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{figs/}}
+
+
+
+\title{Math, Strings, Conditionals and Loops}
+%\subtitle{OPERATIONS RESEARCH. \\ Mathematical Models} % 6 hours. 2 sessions
+\AtBeginSection[] % Do nothing for \section* %
+{
+\begin{frame}<beamer> 
+  \frametitle{Agenda}
+  \tableofcontents[currentsection] 
+\end{frame}
+}
+
+\begin{document}
+
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+
+\begin{frame}{Agenda}
+  \tableofcontents
+\end{frame}
+
+
+
+\section{String Interpolation}
+\label{sec:string-interpolation}
+
+\begin{frame}[fragile]{Comma Separators}
+  \begin{itemize} \parskip3mm \justifying
+  \item   When writing strings, you may want to include variables in the output.
+  \item String interpolation includes the variable names as placeholders within the string. There are two standard methods for achieving string interpolation: \textbf{comma separators} and \textbf{format}.
+  \item There’s another way of combining strings: \alert{formatted string literals}, more commonly known as \textbf{f-strings}
+  \end{itemize}
+
+\begin{lstlisting}
+  italian_greeting = 'Ciao'
+  print('Should we greet people with', italian_greeting, 'in North Beach?')
+\end{lstlisting}
+\end{frame}
+\end{document}
