@@ -34,12 +34,201 @@
   \begin{itemize} \parskip3mm \justifying
   \item   When writing strings, you may want to include variables in the output.
   \item String interpolation includes the variable names as placeholders within the string. There are two standard methods for achieving string interpolation: \textbf{comma separators} and \textbf{format}.
+  
+  \end{itemize}
+
+  \begin{code}{}
+\begin{lstlisting}
+      italian_greeting = 'Ciao'
+      print('Should we greet people with', italian_greeting, 'in North Beach?')
+  \end{lstlisting}
+  \end{code}
+
+\end{frame}
+
+\begin{frame}[fragile]{Format}
+  \begin{itemize} \parskip3mm \justifying
+  \item With format, as with commas, Python types, ints, floats, and so on, are converted into strings upon execution
   \item There’s another way of combining strings: \alert{formatted string literals}, more commonly known as \textbf{f-strings}
   \end{itemize}
 
-\begin{lstlisting}
-  italian_greeting = 'Ciao'
-  print('Should we greet people with', italian_greeting, 'in North Beach?')
-\end{lstlisting}
+  \begin{code}{}
+    \begin{lstlisting}
+      owner = 'Lawrence Ferlinghetti'
+      age = 100
+      
+      print(
+         'The founder of City Lights Bookstore, {}, is now {} years old.'.format(owner, age)
+      )
+      
+      print(f'The founder of City Lights Bookstore, {owner}, is now {age} years old.')
+    \end{lstlisting}
+  \end{code}
+\end{frame}
+
+\begin{frame}[fragile]{The \texttt{len( )} Function}
+  \begin{itemize}
+  \item There are many built-in functions that are particularly useful for strings. 
+  \item One such function is \texttt{len()}, which is short for length. 
+  \item The \texttt{len()} function determines the number of characters in a given string.
+
+    \begin{code}{}
+      \begin{lstlisting}
+        arabic_greeting = 'Ahlan wa sahlan.'
+        print(len(arabic_greeting))
+      \end{lstlisting}
+    \end{code}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{String Methods}
+
+  \begin{exercise}{}
+    \begin{enumerate}
+    \item Set a new variable, called \textbf{name}.
+    \item Now, convert the name into lowercase letters using the \textbf{lower()} function.
+    \item Now, capitalize the name using the capitalize() function.
+    \item Convert the name into uppercase letters using upper().
+    \item Finally, count the number of o instances in the word \textbf{'Corey'}.
+    \end{enumerate}
+  \end{exercise}
+
+  You can find more about string methods in this link: \href{https://www.w3schools.com/python/python_ref_string.asp}{String Methods in Python}
+
+\end{frame}
+
+\begin{frame}{Casting}
+  \begin{itemize} \justifying \parskip3mm
+  \item   It's common for numbers to be expressed as strings when dealing with input and output. 
+  \item Note that '5' and 5 are different types. 
+  \item We can easily convert between numbers and strings using the appropriate type keywords. 
+  \end{itemize}
+
+  \begin{exercise}{}
+    \begin{enumerate} \justifying
+    \item Determine the type of '5'
+    \item Now, add '5' and '7'.
+    \item Convert the '5' string to an \textbf{int}.
+    \item Add '5' and '7' by converting them to \textbf{int} first.
+    \end{enumerate}
+  \end{exercise}
+\end{frame}
+
+\begin{frame}[fragile]{The \texttt{input( )} Function}
+  The \texttt{input( )} function is a built-in function that allows user input. It's a little different than what we have seen so far.
+
+  \begin{exercise}{}
+    \begin{enumerate} \justifying
+    \item Ask a user for their name. Respond with an appropriate greeting
+    \item Now, set a variable that will be equal to the \texttt{input( )} function
+    \item Finally, select an appropriate output. Use \texttt{print( )}.
+    \end{enumerate}
+  \end{exercise}
+\end{frame}
+
+\begin{frameact}{Using the \texttt{input()} Function to Rate Your Day}
+  \begin{enumerate} \justifying
+  \item Display a question prompting the user to rate their day on a number scale of 1 to 10.
+  \item Save the user's input as a variable.
+  \item Display a statement to the user that includes the number.
+  \end{enumerate}
+\end{frameact}
+
+\begin{frame}[fragile]{String Indexing and Slicing}
+  \begin{onlyenv}<1>
+    \begin{block}{Indexing} \justifying
+    \begin{itemize} \justifying
+    \item The characters of Python strings exist in specific locations; in other words, their order counts. 
+    \item The index is a numerical representation of where each character is located. 
+    \item The first \alert{character is at index 0}, the second character is at index 1; the third character is at index 2, and so on
+    \end{itemize}
+  \end{block}
+  \end{onlyenv}
+
+  \begin{onlyenv}<2>
+      \begin{code}{}
+    \begin{lstlisting}
+      destination = 'San Francisco'
+      destination[0]
+      destination[1]
+      destination[2]
+
+      # negative index
+      destination[-1]
+      destination[-2]
+    \end{lstlisting}
+  \end{code}
+\end{onlyenv}
+
+\begin{onlyenv}<2>
+  \begin{code}{}
+    \begin{lstlisting}
+      bridge = 'Golden Gate'
+      bridge[6]
+    \end{lstlisting}
+  \end{code}
+\end{onlyenv}
+
+\begin{onlyenv}<3>
+  \begin{block}{Slicing} \justifying
+    A slice is \alert{a subset of a string or other element}. A slice could be the whole element or one character, but it's more commonly a group of adjoining characters.
+
+    \begin{code}{}
+      \begin{lstlisting}
+        destination[4:11]
+        destination[0:3]
+        destination[:8]
+        destination[-3:]
+      \end{lstlisting}
+    \end{code}
+  \end{block}
+\end{onlyenv}
+\end{frame}
+
+\begin{frame}[fragile]{Booleans and Conditionals}
+\only<1>{  Booleans, named after George Boole, take the values of \textbf{True} or \textbf{False}. Although the idea behind Booleans is rather simple, they make programming immensely more powerful.}
+
+  \begin{block}<only@1>{Booleans} \justifying
+In Python, a Boolean class object is represented by the bool keyword and has a value of \textbf{True} or \textbf{False}.
+\end{block}
+
+\begin{onlyenv}<2>
+  \begin{exercise}{}
+  \begin{enumerate}
+  \item Use a Boolean to classify someone as being over 18.
+  \item Use a Boolean to classify someone as not being over 21 
+  \end{enumerate}
+\end{exercise}
+\end{onlyenv}
+
+
+  \begin{block}<only@3>{Logical Operators}
+    Booleans may be combined with the \textbf{and}, \textbf{or}, and \textbf{not} logical operators.
+  \end{block}
+
+
+  \begin{onlyenv}<3>
+    \begin{code}{}
+    \begin{lstlisting}
+      over_18, over_21 = True, False
+      over_18 and over_21
+      over_18 or over_21
+      not over_18
+      not over_21 or (over_21 or over_18)
+    \end{lstlisting}
+  \end{code}
+  \end{onlyenv}
+\end{frame}
+
+\begin{frame}[fragile]{Comparison Operators}
+  \begin{exercise}{}
+    \begin{enumerate} \justifying
+    \item Now, set age as equal to 20 and include a comparison operator to check whether age is less than 13.
+    \item Check whether age is greater than or equal to 20 \textbf{and} less than or equal to 21.
+    \item Check whether age is equivalent to 21.
+    \item Check whether age is equivalent to 19.
+    \item Is 6 equivalent to 6.0 in Python? 
+    \end{enumerate}
+  \end{exercise}
 \end{frame}
 \end{document}

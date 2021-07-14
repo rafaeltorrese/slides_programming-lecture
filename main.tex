@@ -64,7 +64,7 @@ text badly centered, text width=5em, draw=black, fill=green!30%
 %%%%%%%%%%%%%%%%%%%%
 \definecolor{tealsection}{RGB}{50,90,90}
 \hypersetup{colorlinks=true,
-  urlcolor=red,
+  urlcolor=brown,
   linkcolor=tealsection}
 
 \usepackage[T1]{fontenc}
@@ -81,16 +81,18 @@ text badly centered, text width=5em, draw=black, fill=green!30%
   keywordstyle=\color{keywords},
   commentstyle=\color{comments}\emph,
   stringstyle=\color{orange},
-  upquote=false,
+  upquote=true,
   showstringspaces=false
 }
 %%% Ipython Notebook Style
 % \input{ipythonnb_style}
 % ========================================
+\newcounter{exercisecount}
+\resetcounteronoverlays{exercisecount}
 \newenvironment<>{exercise}[1]
 {
 \setbeamercolor{block title}{fg=white,bg=orange!45!black}
-\begin{block}#2{Ejercicio #1}\justifying
+\begin{block}{\refstepcounter{exercisecount} Exercise \theexercisecount #1}{}\justifying
 }
 {%
 \end{block}
@@ -158,7 +160,12 @@ text badly centered, text width=5em, draw=black, fill=green!30%
 \end{frame}
 }
 % ========================================
-
+\newenvironment<>{code}[1]{
+  \setbeamercolor{block title}{fg=white,bg=black!75!yellow}%
+  \begin{block}{Code #1}}
+  {
+\end{block}
+}
 % ========================================
 
 \usetheme[%
@@ -174,7 +181,7 @@ progressbar=frametitle%
 
 % \institute{UNIVERSIDAD ANÁHUAC MÉXICO}
 \author{Rafael Torres Escobar, Ph.D.}
-\date[OR]{}
+\date[OR]{\href{mailto:rafael.torrese@universidad.anahuac.mx}{rafael.torrese@universidad.anahuac.mx}}
 
 
 
