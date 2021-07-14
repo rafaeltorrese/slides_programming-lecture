@@ -231,4 +231,125 @@ In Python, a Boolean class object is represented by the bool keyword and has a v
     \end{enumerate}
   \end{exercise}
 \end{frame}
+
+\begin{frame}[fragile]{Comparing Strings}
+  Python uses the convention of alphabetical order to make sense of these comparisons. Think of a dictionary: when comparing two words, the word that comes later in the
+  dictionary is considered greater than the word that comes before
+  \begin{exercise}{}
+    \begin{enumerate}
+    \item Let's compare single letters
+    \item Now, let's compare 'New York' and 'San Francisco'
+    \end{enumerate}
+  \end{exercise}
+\end{frame}
+
+\begin{frame}[fragile]{Conditionals}
+  \begin{itemize} \justifying
+  \item   Conditionals are used when we want to express code based upon a set of circumstances or values. 
+  \item Conditionals evaluate Boolean values or Boolean expressions, and they are usually preceded by \textbf{'if'}.
+  \end{itemize}
+  
+  \begin{exercise}{}
+    \begin{enumerate} \justifying
+  \item Run multiple lines of code where you set the age variable to 20 and add an if clause
+  \item Now, use nested conditionals 
+    \end{enumerate}
+  \end{exercise}
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{if else}}
+  
+\only<1>{  \textbf{if} conditionals are commonly joined with else clauses. The idea is as follows. Say you want to print something to all users unless the user is under 18. You can address this with an \textbf{if-else} conditional.}
+
+\begin{onlyenv}<2>
+    \begin{exercise}{}
+    \begin{enumerate} \justifying
+    \item Introduce a voting program only to users over 18 by using the following code snippet
+      \begin{lstlisting}
+        age = 20
+        if age < 18:
+            print('You aren\'t old enough to vote.')
+        else:
+            print('Welcome to our voting program.')
+      \end{lstlisting}
+    \item Now run the following code snippet, which is an alternative to the code mentioned in step 1 of this exercise
+    \end{enumerate}
+\end{exercise}
+\end{onlyenv}
+\end{frame}
+
+\begin{frame}[fragile]{The elif Statement}
+  \begin{code}{}
+    \begin{lstlisting}
+      if age <= 10:
+          print('Listen, learn, and have fun.')
+      elif age<= 19:
+          print('Go fearlessly forward.')
+      elif age <= 29:
+          print('Seize the day.')
+      elif age <= 39:
+          print('Go for what you want.')
+      elif age <= 59:
+          print('Stay physically fit and healthy.')
+      else:
+          print('Each day is magical.')
+    \end{lstlisting}
+  \end{code}
+\end{frame}
+
+\begin{frame}{Loops}
+  There are three key components to most loops:
+  
+  \begin{enumerate} \justifying
+  \item The start of the loop
+  \item The end of the loop
+  \item The increment between numbers in the loop
+  \end{enumerate}
+  
+Python distinguishes between two fundamental kinds of loops: \textbf{while} loops, and \textbf{for} loops
+\end{frame}
+
+\begin{frame}[fragile]{The \texttt{while} Loops}
+  In a while loop, a designated segment of code repeats provided that a particular condition is true. When the condition evaluates to false, the while loop stops running. The while loops print out the first 10 numbers.
+
+  \begin{code}{}
+    \begin{lstlisting}
+      i = 1
+      while i <= 10:
+          print(i)
+          i += 1
+    \end{lstlisting}
+  \end{code}
+
+  \begin{code}{An Infinite Loop}
+    \begin{lstlisting}
+      x = 5
+      while x <= 20:
+          print(x)
+    \end{lstlisting}
+  \end{code}
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{break} statement}
+  \begin{itemize} \justifying
+  \item \textbf{break} is a special keyword in Python that is specifically designed for loops. 
+  \item If placed inside of a loop, commonly in a conditional, break will immediately terminate the loop. 
+  \item It doesn't matter what comes before or after the loop. 
+  \item The break is placed on its own line, and it breaks out of the loop.
+  \end{itemize}
+
+  To practice, you should print the first number greater than 100 that is divisible by 17
+\end{frame}
+
+\begin{frameact}{Finding the Least Common Multiple (LCM)}
+  \begin{enumerate}\parskip3mm  \justifying
+  \item Set a pair of variables as equal to 24 and 36.
+  \item Initialize the while loop, based on a Boolean that is True by default, with an iterator.
+  \item Set up a conditional to check whether the iterator divides both numbers.
+  \item Break the while loop when the LCM is found.
+  \item Increment the iterator at the end of the loop.
+  \item  Print the results.
+  \end{enumerate}
+\end{frameact}
+
 \end{document}
