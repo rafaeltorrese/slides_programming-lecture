@@ -1,0 +1,65 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{figs/}}
+
+
+
+\title{Python Structures}
+%\subtitle{OPERATIONS RESEARCH. \\ Mathematical Models} % 6 hours. 2 sessions
+\AtBeginSection[] % Do nothing for \section* %
+{
+\begin{frame}<beamer> 
+  \frametitle{Agenda}
+  \tableofcontents[currentsection] 
+\end{frame}
+}
+
+\begin{document}
+% ==================================================
+\begin{frame}
+  \maketitle
+\end{frame}
+\begin{frame}{Agenda}
+  \tableofcontents
+\end{frame}
+% ==================================================
+\begin{frame}[fragile]{Introduction}
+  \begin{itemize} \justifying
+  \item   In programming languages, data structures refer to objects that can hold some data together, which means they are used to store a collection of related data.
+  \item For instance, you can use a list to store our to-do items for the day. 
+  \item The following is an example to show you how lists are coded:
+    \begin{lstlisting}
+      todo = ["pick up laundry", "buy Groceries", "pay electric bills"]
+    \end{lstlisting}
+  \item We can also use a dictionary object to store more complex information such as subscribers' details from our mailing list
+    \begin{lstlisting}
+      User = {
+        "first_name": "Jack",
+        "last_name":"White",
+        "age": 41,
+        "email": "jack.white@gmail.com"
+     }
+    \end{lstlisting}
+  \item There are four types of data structures in Python: \alert{list}, \alert{tuple}, \alert{dictionary}, and \alert{set}.
+  \end{itemize}
+\end{frame}
+
+\section{Lists}
+\label{sec:lists}
+
+\begin{frame}[fragile]{The Power of Lists}
+  \begin{enumerate} \justifying
+  \item A list is a type of container in Python that is used to store \alert{multiple data sets at the same time}. 
+  \item Python lists are often compared to arrays in other programming languages, but they do a lot more.
+  \item A list in Python is written within square brackets, \texttt{[ ]}. Each element in the list has its own distinct position and index. 
+  \end{enumerate}
+
+  \begin{exercise}{Working with Python Lists}
+      \begin{lstlisting}
+        shopping = ["bread", "milk", "eggs"]
+        print(shopping)
+        for item in shopping:
+            print(item)                                                             
+      \end{lstlisting}
+  \end{exercise}
+\end{frame}
+\end{document}
