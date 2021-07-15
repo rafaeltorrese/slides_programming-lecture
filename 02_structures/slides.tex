@@ -57,9 +57,78 @@
       \begin{lstlisting}
         shopping = ["bread", "milk", "eggs"]
         print(shopping)
+        
         for item in shopping:
-            print(item)                                                             
+            print(item)
+
+        mixed = [365, "days", True]
+        print(mixed)
+        
       \end{lstlisting}
   \end{exercise}
 \end{frame}
+
+\begin{frame}[fragile]{Matrices as Nested Lists}
+  \begin{exercise}{Using a Nested List to Store Data from a Matrix}
+    \begin{lstlisting}
+      m = [[1, 2, 3], [4, 5, 6]]
+      print(m[1][1])
+
+      for i in range(len(m)):
+          for j in range(len(m[i])):
+              print(m[i][j])
+
+      for row in m:
+          for col in row:
+              print(col)
+    \end{lstlisting}
+  \end{exercise}
+\end{frame}
+\begin{frameact}{Using a Nested List to Store Employee Data}
+
+  {\centering
+    \begin{tabular}{lll}
+      \toprule
+      Name          & Age & Department \\
+      \midrule
+      John Mckee    & 38  & Sales      \\
+      Lisa Crawford & 29  & Marketing  \\
+      Sujan Patel   & 33  & HR\\
+      \bottomrule
+    \end{tabular}
+    \par}
+  
+  \begin{enumerate}
+\item Create a list and assign it to \textbf{employees}.
+\item Create three nested lists in employees to store the information of each employee, respectively.
+\item Print the employees variable.
+\item Print the details of all employees in a presentable format.
+\item Print only the details of Lisa Crawford.
+  \end{enumerate}
+\end{frameact}
+
+\begin{frame}[fragile]{Matrix Operations}
+  \begin{exercise}{Implementing Matrix Operations (Addition and Subtraction)}
+    X = [[1,2,3],[4,5,6],[7,8,9]]
+    Y = [[10,11,12],[13,14,15],[16,17,18]]
+
+    result = [
+              [0,0,0],
+              [0,0,0],
+              [0,0,0],
+              ]
+
+    # iterate through rows
+    for i in range(len(X)):
+    # iterate through columns
+        for j in range(len(X[0])):
+        result[i][j] = X[i][j] + Y[i][j]
+print(result)
+  \end{exercise}
+\end{frame}
+
+\begin{frame}[fragile]{Matrix Multiplication Operations}
+  
+\end{frame}
+
 \end{document}
