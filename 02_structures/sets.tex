@@ -1,0 +1,80 @@
+\section{Sets}
+\label{sec:sets}
+
+\begin{frame}[fragile]{Sets}
+  \begin{onlyenv}<1>
+      \begin{itemize} \parskip3mm \justifying
+      \item Sets are a relatively new addition to the Python collection type. 
+      \item They are unordered collections of unique and immutable objects that support operations mimicking mathematical set theory. 
+      \item As sets do not allow multiple occurrences of the same element, they can be used to effectively prevent duplicate values.
+  \end{itemize}
+\end{onlyenv}
+
+\begin{onlyenv}<2>
+  \begin{exercise}{Using Sets in Python}
+    \begin{lstlisting}
+      s1 = set([1,2,3,4,5,6])
+      print(s1)
+      s2 = set([1,2,2,3,4,4,5,6,6])
+      print(s2)
+      s3 = set([3,4,5,6,6,6,1,1,2])
+      print(s3)
+
+      s4 = {"apple", "orange", "banana"}
+      print(s4)
+
+      s4.add('pineapple')
+      print(s4)
+    \end{lstlisting}
+  \end{exercise}
+\end{onlyenv}
+
+\end{frame}
+
+\begin{frame}[fragile]{Set Operations}
+  \begin{exercise}{Implementing Set Operations}
+    \begin{columns}[t]
+      \column{0.5\textwidth}
+          \begin{lstlisting}
+      s5 = {1,2,3,4}
+      s6 = {3,4,5,6}
+
+      print(s5 | s6)
+      print(s5.union(s6))
+
+      print(s5 & s6)
+      print(s5.intersection(s6))
+      
+      print(s5 - s6)
+      print(s5.difference(s6))
+
+      print(s5 <= s6)
+      print(s5.issubset(s6))
+    \end{lstlisting}
+    \column{0.5\textwidth}
+    \begin{lstlisting}
+      s7 = {1,2,3}
+      s8 = {1,2,3,4,5}
+      
+      print(s7 <= s8)
+      print(s7.issubset(s8))
+
+      print(s7 < s8)
+      s9 = {1,2,3}
+      s10 = {1,2,3}
+      print(s9 < s10)
+      print(s9 < s9)
+
+      print(s8 >= s7)
+      print(s8.issuperset(s7))
+      print(s8 > s7)
+      print(s8 > s8)
+    \end{lstlisting}
+      
+    \end{columns}
+  \end{exercise}
+\end{frame}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "slides"
+%%% End:
