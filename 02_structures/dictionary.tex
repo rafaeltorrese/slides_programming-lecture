@@ -1,0 +1,110 @@
+\section{Dictionary Keys and Values}
+\label{sec:dictiories}
+
+\begin{frame}[fragile]{Dictionary}
+  \begin{onlyenv}<1>
+      A Python dictionary is an unordered collection. Dictionaries are written with curly brackets, and they have \textbf{keys} and \textbf{values}.
+
+  \begin{lstlisting}
+    employee = {
+      'name': "Jack Nelson",
+      'age': 32,
+      'department': "sales"
+    }
+  \end{lstlisting}
+  \end{onlyenv}
+
+  \begin{onlyenv}<2>
+    \begin{exercise}{Using a Dictionary to Store a Movie Record}
+      \begin{lstlisting}
+        movie = {
+          "title": "The Godfather",
+          "director": "Francis Ford Coppola",
+          "year": 1972,
+          "rating": 9.2
+        }
+        
+        print(movie['year'])
+        movie['rating'] = (movie['rating'] + 9.3)/2
+        print(movie['rating'])
+
+        movie = {}
+        movie['title'] = "The Godfather"
+        movie['director'] = "Francis Ford Coppola"
+        movie['year'] = 1972
+        movie['rating'] = 9.2
+
+        movie['actors'] = ['Marlon Brando', 'Al Pacino', 'James Caan']
+        movie['other_details'] = {
+          'runtime': 175,
+          'language': 'English'
+        }
+        print(movie)
+      \end{lstlisting}
+  \end{exercise}
+\end{onlyenv}
+\end{frame}
+
+\begin{frameact}{Storing Company Employee Table Data Using a List and a Dictionary}
+  \begin{tabular}{lll}
+    Name          & Age & Department \\
+    \midrule
+    John Mckee    & 38  & Sales      \\
+    Lisa Crawford & 29  & Marketing  \\
+    Sujan Patel   & 33  & HR        \\
+    \bottomrule
+  \end{tabular}
+
+  \begin{enumerate} \justifying
+  \item Create a list named \textbf{employees}.
+  \item Create three dictionary objects inside employees to store the information of each employee.
+  \item Print the employees variable.
+  \item Print the details of all employees in a presentable format.
+  \item Print only the details of Sujan Patel.
+  \end{enumerate}
+\end{frameact}
+
+\begin{frame}[fragile]{Zipping and Unzipping Dictionaries Using \texttt{zip( )}}
+  \begin{exercise}{}
+    \begin{lstlisting}
+      items = ['apple', 'orange', 'banana']
+      quantity = [5, 3, 2]
+
+      orders = zip(items,quantity)
+      print(orders)
+
+      orders = zip(items,quantity)
+      print(list(orders))
+
+      orders = zip(items,quantity)
+      print(tuple(orders))
+
+      orders = zip(items,quantity)
+      print(dict(orders))
+    \end{lstlisting}
+  \end{exercise}
+\end{frame}
+
+\begin{frame}[fragile]{Dictionary Methods}
+  \begin{exercise}{Accessing a Dictionary Using Dictionary Methods}
+    \begin{lstlisting}
+      orders = {'apple':5, 'orange':3, 'banana':2}
+      print(orders.values())
+      print(list(orders.values()))
+
+      print(list(orders.keys()))
+
+      for tuple in list(orders.items()):
+          print(tuple)
+    \end{lstlisting}
+  \end{exercise}
+
+  More on Dictionary Methods, click in the following link: \href{https://www.w3schools.com/python/python_ref_dictionary.asp}{Python Dictionary Methods}      
+\end{frame}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "slides"
+%%% End:
