@@ -1,0 +1,40 @@
+\section{Tuples}
+\label{sec:tuples}
+
+
+\begin{frame}[fragile]{Tuples}
+  \begin{onlyenv}<1>
+    A tuple object is similar to a list, but it cannot be changed. Tuples are immutable sequences, which means their values cannot be changed after initialization. You use a tuple to represent fixed collections of items:
+    \begin{lstlisting}
+    weekdays_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    
+    weekdays_tuple = ('Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday', 'Sunday')
+  \end{lstlisting}
+  \end{onlyenv}
+
+  \begin{onlyenv}<2>
+    \begin{exercise}{Exploring Tuple Properties in Our Shopping List}
+      \begin{lstlisting}
+        t = ('bread', 'milk', 'eggs')
+        print(len(t))
+
+        t.append('apple')
+        t[2] = 'apple'
+
+        print(t + ('apple', 'orange'))
+        print(t)
+
+        t_mixed = 'apple', True, 3
+        print(t_mixed)
+        t_shopping = ('apple',3), ('orange',2), ('banana',5)
+        print(t_shopping)
+      \end{lstlisting}
+    \end{exercise}
+  \end{onlyenv}
+\end{frame}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "slides"
+%%% End:
