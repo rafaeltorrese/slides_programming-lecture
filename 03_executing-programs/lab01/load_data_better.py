@@ -1,4 +1,5 @@
 import csv
+import re
 from pprint import pprint
 
 def load_csv(filename):
@@ -15,10 +16,19 @@ def column_to_integer(datasets, column):
     class_values = [row[column] for row in dataset]
     unique = set(class_values)
     lookup = {value:i for i, value in enumerate(unique)}
-    print(lookup)
     for row in dataset:
         row[column] = lookup[ row[column] ]
     return lookup
+
+def string_to_float(filename):
+    'Read numbers as strings from a filename and transforms it to float format'
+    pattern = "^\d*\.?\d+"
+    regex = re.compile(pattern)
+    with open(filename) as file:
+        return [ 
+                [ float(element) if regex.match(element) else element for element in row ] 
+                for row in csv.reader(file, delimiter=',')
+                ]
 
 
 if __name__ == "__main__":
@@ -31,9 +41,11 @@ if __name__ == "__main__":
     ncols = len(dataset[0])
     for i in range(ncols - 1):
         column_to_float(dataset, i)
-    print(dataset[0])
 
     # convert class column to integer
     lookup = column_to_integer(dataset, 4)
     print(dataset[0])
     print(lookup)
+
+    dataset02 = string_to_float(filename)
+    pprint(dataset02[0])
