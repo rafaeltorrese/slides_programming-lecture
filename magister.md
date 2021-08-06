@@ -11,9 +11,10 @@ author: 10267
 - Asistencia se tomará en cuenta.
 
 # Sugerencias para tener éxito en la asignatura
-- Realizar ejercicios en clase
+- Realizar ejercicios en clase.
 - Leer las lecturas recomendadas.
-- Leer la documentación del programa.
+- Leer documentación sugerida de los programas.
+- Usar Brightspace.
 
 # Planeación de la asignatura
 
@@ -23,23 +24,43 @@ author: 10267
 3. Operaciones aritméticas
 4. Operaciones relacionales
 5. Operaciones lógicas
+
 ### Resultados de aprendizaje del tema. 
 El alumno conoce los fundamentos de un lenguaje de programación y el entorno de programación.
+
 ### Estrategias educativas. 
+- Aprendizaje colaborativo: método educativo mediante el cual se busca unir los esfuerzos de los alumnos o de alumnos y profesores para, así trabajar juntos en la tarea de adquirir conocimiento, habilidades y competencias.
+- Aprendizaje a base de problemas: Investigación documental basada en un problema particular cuyo objetivo es su solución. Las conclusiones deberán derivarse del conocimiento adquirido en el desarrollo de dicha investigación.
+- Solución de problemas.
+- Trabajo cooperativo o en equipo: División en pequeños equipos de trabajo que han de abocarse a desarrollar tareas, resolver problemas o elaborar productos a través de una actividad conjunta en la que los participantes habrán de involucrarse activamente y, posteriormente, compartir los productos o conclusiones desarrolladas.
+- Investigación documental: Acopio de información por parte del estudiante a través de la consulta, lectura, análisis y discusión de material escrito y electrónico de manea que le permita establecer nuevas relaciones con los contenidos de la clase y formular conclusiones.
+- Lecturas dirigidas: Análisis crítico de lecturas relacionadas con la temática del curso para su posterior discusión y exposición de conclusiones.
+
 ### Medios de evaluación.
-### Recursos de la sesión.
+- Actividades de investigación
+- Examen escrito
+- Participación en clase
+- Resolución de Problema o Caso
+- Tareas
+
+### Recursos de la sesión. 
 - Presentación
 - Ejercicios
+- Brightspace
 - Jupyter Notebooks     
-### Calendarización
-1.5 horas
 
+
+### Calendarización
+- 1.5 horas
+- 2 sesiones. 1 sesión = 3 horas
 ## Estructuras de control
 1. Instrucciones tipo if; if-else; if-elseif-else; select-case
 2. Ciclos tipo for; while; do-while
 3. Ciclos anidados
+
 ### Resultados de aprendizaje del tema
-El alumno construye programas diferenciando el uso de una estructura de control condicional o selectiva de una estructura de control repetitiva
+El alumno construye programas diferenciando el uso de una estructura de control condicional o selectiva de una estructura de control repetitiva.
+
 ### Estrategias educativas
 - Aprendizaje colaborativo: método educativo mediante el cual se busca unir los esfuerzos de los alumnos o de alumnos y profesores para, así trabajar juntos en la tarea de adquirir conocimiento, habilidades y competencias.
 - Aprendizaje a base de problemas: Investigación documental basada en un problema particular cuyo objetivo es su solución. Las conclusiones deberán derivarse del conocimiento adquirido en el desarrollo de dicha investigación.
@@ -48,16 +69,19 @@ El alumno construye programas diferenciando el uso de una estructura de control 
 - Prácticas de laboratorio: Realización de ejercicios, simulaciones o experimentos para el adiestramiento y adquisición de habilidades y competencias, así como su evaluación. Dichas actividades pueden estar basadas en el uso de recursos informáticos y computacionales.
 - Estudio de casos: Análisis detallado, exhaustivo y objetivo de una situación específica real a fin de identificar problemas, extraer conclusiones operativas y proponer soluciones. Pretende vincular contenidos curriculares con situaciones de la realidad concreta, fortaleciendo la capacidad de proponer distintas opciones de solución acordes con el caso planteado para la toma de decisiones.
 - Aula invertida: Enfoque pedagógico en el que el primer contacto con los conceptos nuevos se lleva a cabo en el espacio de aprendizaje individual (casa) en forma de actividades estructuradas y el espacio grupal se transforma en un entorno de aprendizaje dinámico e interactivo donde el profesor guía a los alumnos a medida que aplican conceptos y se involucran creativamente en el tema.
+
 ### Medios de evaluación
 - Actividades de investigación
 - Examen escrito
 - Participación en clase
 - Resolución de Problema o Caso
 - Tareas
+
 ### Recursos de la sesión.
 - Presentación
 - Ejercicios
 - Jupyter Notebooks
+
 ### Calendarización
 - 4.5 horas
 
@@ -68,21 +92,25 @@ El alumno construye programas diferenciando el uso de una estructura de control 
 
 ### Resultados de aprendizaje del tema
 El alumno segmenta el código y reutiliza funciones en los programas que desarrolle
+
 ### Estrategias educativas.
 - Aprendizaje colaborativo: método educativo mediante el cual se busca unir los esfuerzos de los alumnos o de alumnos y profesores para, así trabajar juntos en la tarea de adquirir conocimiento, habilidades y competencias.
 - Aprendizaje a base de problemas: Investigación documental basada en un problema particular cuyo objetivo es su solución. Las conclusiones deberán derivarse del conocimiento adquirido en el desarrollo de dicha investigación.
 - Solución de problemas.
 - Trabajo cooperativo o en equipo: División en pequeños equipos de trabajo que han de abocarse a desarrollar tareas, resolver problemas o elaborar productos a través de una actividad conjunta en la que los participantes habrán de involucrarse activamente y, posteriormente, compartir los productos o conclusiones desarrolladas.
+
 ### Medios de evaluación.
 - Actividades de investigación
 - Examen escrito:
 - Participación en clase
 - Resolución de Problema o Caso
 - Tareas
+
 ### Recursos de la sesión.
 - Slides
 - Ejercicios
 - Jupyter Notebooks
+
 ### Calendarización.
 3 horas
 
@@ -92,23 +120,28 @@ El alumno segmenta el código y reutiliza funciones en los programas que desarro
 3. Tuplas
 4. Arreglos 
 5. DataFrame con Pandas
+
 ### Resultados de aprendizaje del tema.
 El alumno segmenta el código y reutiliza funciones en los programas que desarrolle
+
 ### Estrategias educativas.
 - Aprendizaje colaborativo: método educativo mediante el cual se busca unir los esfuerzos de los alumnos o de alumnos y profesores para, así trabajar juntos en la tarea de adquirir conocimiento, habilidades y competencias.
 - Aprendizaje a base de problemas: Investigación documental basada en un problema particular cuyo objetivo es su solución. Las conclusiones deberán derivarse del conocimiento adquirido en el desarrollo de dicha investigación.
 - Solución de problemas.
 - Trabajo cooperativo o en equipo: División en pequeños equipos de trabajo que han de abocarse a desarrollar tareas, resolver problemas o elaborar productos a través de una actividad conjunta en la que los participantes habrán de involucrarse activamente y, posteriormente, compartir los productos o conclusiones desarrolladas.
+
 ### Medios de evaluación. 
 - Actividades de investigación
 - Examen escrito
 - Participación en clase
 - Resolución de Problema o Caso
 - Tareas
+
 ### Recursos de la sesión.
 - Slides
 - Ejercicios
 - Jupyter Notebooks
+
 ### Calendarización.
 15 horas
 
