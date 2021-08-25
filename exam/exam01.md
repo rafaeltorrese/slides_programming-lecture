@@ -23,5 +23,5 @@ Comprobar los resultados que aparecen en la hoja de cálculo con los resultados 
 ## Entregar
 - Archivo main.py con lógica del modelo
 - Archivo distribuions.py con distribución de probabilidad definida por usuario.
-- subir los archivos en carpeta comprimida .zip con su nombre completo en minúsculas separando apellidos y nombres por guión bajo, comenzando por el apellido parterno, por ejemplo, mendieta_juarez_joaquin
+- subir los archivos en carpeta comprimida .zip con su nombre completo en minúsculas separando apellidos y nombres por guión bajo, comenzando por el apellido parterno, por ejemplo, **mendieta_juarez_joaquin.zip**
 - Todos los resultados deberán imprimirse en pantalla, por ejemplo `print(f'Utilidad promedio fue de: {utilidad_media}')`
