@@ -5,16 +5,18 @@
 import numpy as np
 import matplotlib.pyplot as plt
 #%%
-calendars = np.loadtxt("data/calendars.txt", dtype=float)
+# calendars = np.loadtxt("data/calendars.txt", dtype=float)
+# cumavg = calendars.cumsum() / np.arange(1, len(calendars) + 1)
+
 stock_price = np.loadtxt(r".\data\stock.txt", dtype=float)
-cumavg = calendars.cumsum() / np.arange(1, len(calendars) + 1)
-print(stock_price)
-#%%
+t = np.arange(1, len(stock_price) + 1)
+#%% [markdown]
+
 plt.title('Opening Sotck Prices')
 plt.xlabel('Days')
 plt.ylabel('$ USD')
 
-plt.plot(stock_price)
-
+plt.plot(t, stock_price, marker='.', color='red')
+plt.xticks([1, 8, 15, 22, 28])
 plt.show()
 # %%
