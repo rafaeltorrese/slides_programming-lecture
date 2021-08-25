@@ -16,6 +16,7 @@ Comprobar los resultados que aparecen en la hoja de cálculo con los resultados 
 - Evaluar utilidad promedio y nivel de servicio para diferentes niveles de reposición, los niveles de reposición serán de 100 a 160 de 10 en 10. Ver tabla de resultados en ejemplo. Los niveles de reposición estructurarlos como una lista.
 - Realizar 5000 ensayos
 - La demanda se reondea a entero, usar función `round(value, 0)`
+- Generar demanda normal con la siguiente expresión $$N_i = (\sum_{i=1}^{12} r_i - 6 )\sigma + \mu$$
 
 
 
