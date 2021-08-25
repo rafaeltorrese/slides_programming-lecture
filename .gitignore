@@ -19,3 +19,4 @@ slides*.pdf
 *ipynb_checkpoints
 *.html
 *.doc*
+*.code-workspace
